@@ -1,0 +1,146 @@
+******************
+Build Instructions
+******************
+
+Dependencies
+============
+
+#. Aurora makes use of new `C++41 <http://en.wikipedia.org/wiki/C%2B%2B11>`_.
+   Therefore, a fairly new compiler is needed. The current state of the
+   implemented feature set of different compilers can be seen `here
+   <https://wiki.apache.org/stdcxx/C%2B%2B0xCompilerSupport>`_. Aurora has been
+   tested to compile with g++ 4.8, clang 3.3 and Microsoft Visual Studio 2015.
+#. `cmake <http://cmake.org/>`_ 2.8.9 or later
+#. `libtiff <http://www.remotesensing.org/libtiff/>`_ 4.0 or later
+#. `git <http://git-scm.com/>`_ (optional) to check out the source tree
+#. `FFTW <http://fftw.org/>`_ v3 (optional), one of the fastest FFT libraries
+#. `Doxygen <http://www.stack.nl/~dimitri/doxygen/>`_ (optional)
+#. `Sphinx <http://sphinx-doc.org/>`_ (optional)
+#. `Qt 5 <http://qt-project.org/>`_ (optional)
+#. `Qwt 6.1 <http://sourceforge.net/projects/qwt/>`_ (optional)
+
+Linux
+=====
+The following installation instructions are for Ubuntu.
+
+Preparations
+------------
+  
+QWT
+...
+Download and extract qwt. Build and install::
+
+  qmake
+  make
+  sudo make install
+
+Build
+-----
+To install the required packages for cmake, libtiff, git, FFTW and Doxygen
+type::
+
+  sudo apt-get install cmake libtiff5-dev git libfftw3-dev
+
+For Qt 5::
+
+  sudo apt-get install qt5-default
+
+*Note*: The clang compiler does currently not support OpenMP. Therefore, the
+best performance can be achieved by using gcc.
+Create a new directory outside the source tree::
+
+  mkdir build
+  cd build
+  cmake -DCMAKE_BUILD_TYPE=Release {PATH_TO_AURORA_SOURCE}
+  make -j4
+
+Test
+----
+To run the tests (from the build directory)::
+
+  make check
+
+Documentation
+-------------
+For Doxygen::
+
+  sudo apt-get install doxygen
+
+For Sphinx::
+
+  sudo apt-get install python-setuptools
+  sudo easy_install sphinx
+
+To create the html documentation::
+
+  make doc
+
+Windows
+=======
+Only Visual Studio 2015 supports enough of C++11 to compile Aurora.
+
+Preparations
+------------
+
+Compiling Qt
+............
+As there are no binaries available for Qt5 and Visual Studio 2013, Qt must be
+compiled from the sources. Download the sources from
+`<http://www.qt.io/download-open-source/>`_: Open
+the VS2015 compiler prompt. Ensure that Python is part of the path. Create a
+build directory and change into it::
+
+  ..\qt-everywhere-opensource-src-5.5.0\configure -prefix c:\qt5 -opensource -nomake tests -nomake examples -release
+  nmake
+  nmake install
+
+Extend the environment variable Path to include "c:\qt5\bin".
+
+Compiling QWT
+.............
+`<http://qwt.sourceforge.net/qwtinstall.html>`_:
+
+Extract the source. In-tree build::
+
+  qmake qwt.pro
+  nmake
+  nmake install
+
+Visual Studio 2015
+------------------
+Check out the dependencies. Create and enter a new direcory and create the build
+files with::
+
+  cmake -G"Visual Studio 14 2015 Win64" -DCMAKE_INSTALL_PREFIX=. ../Dependencies
+
+Open the project in Visual Studio, change to release build and build INSTALL.
+
+::
+
+  cmake -G"Visual Studio 14 2015 Win64" -DCMAKE_PREFIX_PATH="../Dependencies_MSVC;/c/qt5/" -DCMAKE_INCLUDE_PATH=/c/Qwt-6.1.2/ -DCMAKE_INSTALL_PREFIX=. ../Aurora
+
+Open the project in Visual Studio, change to release build and build INSTALL.
+Copy Dependencies_MSVC/bin into Aurora_MSVC/bin
+
+Documentation
+-------------
+`Sphinx Installation Instructions <http://sphinx-doc.org/latest/install.html#windows-install-python-and-sphinx>`_
+
+::
+
+  cmake -DSPHINX_DIR={PATH_TO_SPHINX} {PATH_TO_AURORA_SOURCE}
+
+Compile Options
+===============
+In an unity build all the source file are included in a single file. This
+shortens the compile time and enables the possibility of better optimization as
+the whole source code is visble to the compiler. This is a way of achieving 
+whole program optimization. Unity builds can be enabled by adding the option
+AURORA_UNITY_BUILD to cmake::
+
+  cmake -DAURORA_UNITY_BUILD=1 {PATH_TO_AURORA_SOURCE}
+
+A version of Aurora can be built that uses only single precision float by adding
+AURORA_SINGLE_PRECISION to cmake::
+
+  cmake -DAURORA_SINGLE_PRECISION=1 {PATH_TO_AURORA_SOURCE}

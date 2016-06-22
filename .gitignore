@@ -1,0 +1,7 @@
+docs/Api/
+*.lyx~
+*.lyx#
+*.pdf
+*.emergency
+CMakeLists.txt.user
+*.autosave

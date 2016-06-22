@@ -1,0 +1,195 @@
+[Chen1997]
+   Authors:
+     J.H. Chen, D. Van Dyck
+
+  Title:
+    Accurate multislice theory for elastic electron scattering in transmission
+    electron microscopy
+
+    Ultramicroscopy 1-2 (1997), 29 - 44
+
+  DOI:
+    10.1016/S0304-3991(97)00071-5
+
+[CODATA2010]
+  Authors:
+    P. Mohr, B. Taylor, D. Newell
+    
+  Title:
+    CODATA recomended values of the fundamental physical constants: 2010
+    
+    Reviews of Modern Physics, Volume 84.4 (2012): 1527
+    
+  URL:    
+    http://physics.nist.gov/cuu/pdf/RevModPhysCODATA2010.pdf
+    
+  DOI:
+    10.1103/RevModPhys.84.1527
+
+    
+[DLMF]
+  Title:
+    Digital Library of Mathematical Functions
+  
+  URL:
+    http://dlmf.nist.gov/
+
+    
+[Doyle1968]
+  Authors:
+    P. Doyle, P. Turner
+    
+  Title:
+    Relativistic Hartree-Fock X-ray and electron scattering factors
+    
+    Acta Crystallographica Section A (1968), A24, 390-397
+    
+  URL:
+    http://dx.doi.org/10.1107/S0567739468000756
+    
+    
+[Erni2010]
+  Authors:
+    R. Erni
+    
+  Title:
+    Aberration-Corrected Imaging in Transmission Electron Microscopy: 
+    An Introduction
+    
+  ISBN:
+    978-1848165366
+    
+  Publisher
+    Imperial College Press (2010)
+    
+    
+[Haider2008]
+  Authors:
+    M. Haider, H. Müller, S. Uhlemann, J. Zach, U. Loebau, R. Hoeschen
+  
+  Title:
+    Prerequisites for a Cc/Cs-corrected ultrahigh-resolution TEM
+    
+    Ultramicroscopy, Volume 108, Issue 3, February 2008, Pages 167-178, 
+    ISSN 0304-3991, 
+    
+  URL:
+    http://dx.doi.org/10.1016/j.ultramic.2007.07.007.
+    http://www.sciencedirect.com/science/article/pii/S030439910700232X
+
+
+[Jensen2010]
+  Title:
+    Methods in Enzymology
+    Volume 482
+    Cryo-EM, Part B
+    3-D Reconstruction
+
+  Edited by:
+    Grant J. Jensen
+
+  ISBN:
+    978-0123849918
+
+  Publisher:
+    Academic Press
+    
+ 
+[Kirkland2010]
+  Authors:
+    E. Kirkland
+    
+  Title: 
+    Advanced Computing in Electron Microscopy
+  
+  ISBN:
+    978-1441965325
+    
+  Publisher:
+    Springer
+    
+  
+[Lobato2014]
+  Authors:
+    I. Lobato, D. Van Dyck
+
+  Title:
+    An accurate parametrization for scattering factors, electron densities and
+    elektrostatic potentials for netral atoms that obey all physical 
+    constraints
+
+    Acta Crystallographica Section A (2014), A70, 636-649
+
+  URL:
+    http://dx.doi.org/10.1107/S205327331401643X
+  
+  
+[Ming2013]
+  Authors:
+    W. Ming, J. Cheng
+    
+  Title:
+    Validities of three multislice algorithms for quantitative low-energy
+    transmission electron microscopy
+    
+    Ultramicroscopy (2013), 134, 135-143
+    
+  URL:
+    http://dx.doi.org/10.1016/j.ultramic.2013.04.013
+    
+    
+[NumRec2007]
+  Authors:
+    W. Press, S. Teukolsky, W. Vetterling, B. Flannery
+    
+  Title:
+    Numerical Recipes 3rd Edition; The Art of Scientific Computing
+    
+  ISBN:
+    978-0521880688
+    
+  Publisher:
+    Cambridge University Press 
+    
+
+[Peng1996]
+  Authors: 
+    L.-M. Peng, G. Ren, S. Dudarev, M. Whelan
+    
+  Title:
+    Robust Parametrization of Elastic and Absorptive Electron Atomic Scattering 
+    Factor
+    
+    Acta Crystallographica (1996), A52, 257-276
+  
+  URL:
+    http://dx.doi.org/10.1107/S0108767395014371
+    http://scripts.iucr.org/cgi-bin/paper?zh0006
+  
+
+[Spiegelberg2015]
+  Authors:
+    J. Spiegelberg, J. Rusz
+
+  Title:
+    A multislice theory of electron scattering in crystals including backscattering 
+    and inelastic effects
+
+    Ultramicroscopy 159, Part1 (2015), 11 - 18
+
+  DOI:
+    10.1016/j.ultramic.2015.07.002
+
+
+[Weickenmeier1991]
+  Authors:
+    A. weickenmeier, H. Kohl
+    
+  Title:
+    Computation of Absorptive Form Factors for High-Energy Electron Diffraction
+    
+    Acta Crystallographica Section A (1991), A47, 590-597
+    
+  URL:
+    http://dx.doi.org/10.1107/S0108767391004804
+    http://scripts.iucr.org/cgi-bin/paper?bx0514

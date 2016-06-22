@@ -1,0 +1,21 @@
+//--- Aurora/AuroraLib/Config.hpp ----------------------------------------------
+//
+//   This file is distributed under the University of Illinois Open Source
+//   License. See LICENSE.TXT for details.
+//
+//------------------------------------------------------------------------------
+
+#ifndef AURORA_AURORA_LIB_CONFIG_HPP
+#define AURORA_AURORA_LIB_CONFIG_HPP
+
+#cmakedefine01 AURORA_SINGLE_PRECISION
+
+#cmakedefine01 AURORA_NO_RELATIVISTICS
+
+#cmakedefine01 AURORA_DYNAMIC_LIBRARY
+
+#cmakedefine01 AURORA_USE_LAPACK
+
+#cmakedefine01 AURORA_USE_FFTW
+
+#endif

@@ -1,0 +1,37 @@
+*******
+Cluster
+*******
+::
+
+  cd cluster
+  source setup.sh
+
+Compile GCC
+===========
+::
+
+  tar xjf gcc-4.80 
+  cd gcc-4.8.0
+  ./contrib/download_prerequisites
+  cd ..
+  mkdir build
+  cd build
+  ../gcc-4.8.0/configure --disable-multilib --enable-languages=c,c++ --prefix=/home/bq_cwacker/cluster/opt
+  make
+  make install
+
+Compile Clang
+=============
+::
+
+  ../llvm-3.2/configure --enable-shared --enable-optimized --prefix=/home/bq_cwacker/cluster/opt/llvm/
+  
+  
+Compile FFTW
+============
+::
+
+  ../fftw-3.3.3/configure --prefix=/home/bq_cwacker/cluster/opt/fftw/
+  make
+  make check
+  make install

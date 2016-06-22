@@ -1,0 +1,2 @@
+Eigen       Eigen 3.3-alpha1
+gtest       Google C++ Testing Framework 1.7.0
